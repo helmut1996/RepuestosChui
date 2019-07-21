@@ -1,0 +1,194 @@
+body{
+    font-family:cursive;
+    
+    background: rgba(242,246,248,1);
+    background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(50%, rgba(216,225,231,1)), color-stop(51%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1)));
+    background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+    background: -o-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+    background: -ms-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+    background: linear-gradient(to right, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+#banner-area{
+  background-size: cover;
+  background-image: url('../img/fondo2.jpg');
+}
+
+#banner-text{
+width: 100%;
+min-width: 100%;
+padding: 200px 0;
+text-align: center;
+color: #ffffff;
+}
+
+#banner-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    border-bottom: 2px solid white; 
+    display: inline-block;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+#banner-text h3{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+#banner-text h1 span{
+    color: #f3be00;
+}
+
+.image{
+    border-radius: 50px;
+}
+
+
+h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 8px 12px black;
+  color: #f1f1f1;
+  font-size: 50px;
+}
+
+.single-service{
+  background: #222222;
+  padding: 60px;
+  width: 280px;
+  margin-left: 15px; 
+  transition: all 0.9s ease 0s;
+}
+
+.single-service i{
+  color: tomato;
+  font-size: 80px;
+  padding-bottom: 20px; 
+}
+.single-service h3 {
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+hr{
+  background: white;
+}
+.single-service p{
+  display: none;
+  color: white;
+  transition: all 0.9s ease 0s;
+  font-weight: 700;
+}
+
+.single-service:hover p{
+  display: block;
+}
+.single-service:hover i{
+  font-size: 128px;
+  transition: 0.9s;
+  color: white;
+}
+.single-service:hover{
+  background:  tomato;
+}
+
+/*Responsig CSS*/
+
+/*Tablet*/
+@media only screen and (min-width:768px) and (max-width:991px){
+.single-service{
+  margin-bottom: 20px;
+}
+}
+
+
+@media only screen and (max-width:767px){
+
+  h2{
+    font-size: 25px;
+  }
+
+  .single-service{
+    margin-bottom: 20px;
+    padding: 40px;
+  }
+  .single-service:hover i{
+    font-size: 100px;
+  }
+  
+}
+
+@media only screen and (max-width:640px){
+
+  
+
+  .single-service{
+    margin-right: 20px;
+
+  }
+  
+}
+
+.footer {
+  color: #fff;
+  background: #222222;
+}
